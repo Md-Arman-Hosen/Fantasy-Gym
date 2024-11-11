@@ -7,6 +7,7 @@ import './Exercise.css'
 const Exercise = () => {
 
     const [equpments, setequpment] = useState([])
+    const [details, setdetails] = useState([])
 
 
     useEffect( ()=>{
@@ -15,25 +16,31 @@ const Exercise = () => {
         .then(data => setequpment(data))
     } , [])
 
+    const adddetails= (equpment) =>  {
+        const newCart = [...details, equpment];
+        setdetails(newCart);
+    }
 
     return (
 
         <div className='Exercise-Container'>
 
           <div>
-            <div><h1 className='cart-title'>Please Select Your Exercise..</h1></div>
+            <div><h1 className='cart-title'>Please Select Your Exercise</h1></div>
                 <div className='cart-Container'>
 
                 {
                     equpments.map(equpment =>  <Cart 
                         key={equpment.id}
-                        eqp = {equpment}></Cart>
+                        eqp = {equpment}
+                        handeldetails = {adddetails}                       
+                        ></Cart>
                     )
                 }
                 </div>
           </div>
             <div>
-                <Details></Details>
+            <Details details={details}></Details>     
             </div>
 
         </div>

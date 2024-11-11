@@ -19,7 +19,7 @@ const Cart = (props) => {
                 <p><span className='age-time'>For Age: {age}</span></p>
                 <p><span className='age-time'>Time required: {time}</span></p>
             </div>
-            <button className='btn-cart'>Add to Card</button>
+            <button onClick={() => props.handeldetails(props.eqp) } className='btn-cart'>Add to Card</button>
 
         </div>
 
