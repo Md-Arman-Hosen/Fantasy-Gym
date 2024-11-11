@@ -1,0 +1,17 @@
+.Exercise-Container{
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.cart-title{
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+.cart-Container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+    margin-left: 100px;
+}
