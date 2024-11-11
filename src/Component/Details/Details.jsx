@@ -5,7 +5,8 @@ import img from '../Images/profile-picture.png'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Details = () => {
+// eslint-disable-next-line no-unused-vars
+const Details = (props) => {
     return (
         <div className='detailes-Container'>
 
@@ -21,20 +22,33 @@ const Details = () => {
             </div>
 
 
-            <div>
-                <div>
-
+            <div className='health-info'>
+                <div className='health-unit-info'>
+                    <h1>59<small className='unit-style'>Kg</small></h1>
+                    <p className='unit-style'>Weight</p>
                 </div>
 
-                <div>
-
+                <div className='health-unit-info'>
+                    <h1>5.4</h1>
+                    <p className='unit-style'>Hight</p>
                 </div>
 
-                <div>
-
+                <div className='health-unit-info'>
+                    <h1>25<small className='unit-style'>yrs</small></h1>
+                    <p className='unit-style'>Age</p>
                 </div>
+
             </div>
-             
+
+            <h1>Take A Break</h1>
+
+            <div className='health-info'>
+                <button>10s</button>
+                <button>20s</button>
+                <button>30s</button>
+                <button>40s</button>
+                <button>50s</button>
+            </div>
         </div>
     );
 };
