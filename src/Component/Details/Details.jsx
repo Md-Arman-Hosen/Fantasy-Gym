@@ -7,6 +7,14 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Details = (props) => {
+    let time = 0;
+    let breaktime = 0; 
+
+    for(let info of props.details){
+        time = time + info.time;
+    }
+
+    breaktime = props.breakingtime;
     return (
         <div className='detailes-Container'>
 
@@ -24,7 +32,7 @@ const Details = (props) => {
 
             <div className='health-info'>
                 <div className='health-unit-info'>
-                    <h1>59<small className='unit-style'>Kg</small></h1>
+                    <h1>72<small className='unit-style'>Kg</small></h1>
                     <p className='unit-style'>Weight</p>
                 </div>
 
@@ -43,25 +51,23 @@ const Details = (props) => {
             <h1>Take A Break</h1>
 
             <div className='health-info'>
-                <button>10s</button>
-                <button>20s</button>
-                <button>30s</button>
-                <button>40s</button>
-                <button>50s</button>
+            <button onClick={()=>{props.breaktime(10)}}>10s</button>
+                <button onClick={()=>{props.breaktime(20)}}>20s</button>
+                <button onClick={()=>{props.breaktime(30)}}>30s</button>
+                <button onClick={()=>{props.breaktime(40)}}>40s</button>
+                <button onClick={()=>{props.breaktime(50)}}>50s</button>
             </div>
             <h1 className='Exercise-Details'>Exercise Details</h1>
 
             <div className='exercise-time-break-time health-info'>
                 <h1>Exercise time </h1>
-                <h2>200 <span className='unit-style'>seconds</span></h2>
+                <h2>{time} <span className='unit-style'>seconds</span></h2>
             </div>
 
             <div className='exercise-time-break-time health-info'>
                 <h1>Break time </h1>
-                <h2>200 <span className='unit-style'>seconds</span></h2>
+                <h2>{breaktime} <span className='unit-style'>seconds</span></h2>
             </div>
-
-            <p>length:{props.details.length}</p>
             <button className='Activity-btn'>Activity Completed</button>
 
         </div>

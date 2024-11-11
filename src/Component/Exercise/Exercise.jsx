@@ -8,39 +8,50 @@ const Exercise = () => {
 
     const [equpments, setequpment] = useState([])
     const [details, setdetails] = useState([])
+    const [breaktime, setbreaktime] = useState([])
 
 
-    useEffect( ()=>{
+
+    useEffect(() => {
         fetch('data.json')
-        .then(res => res.json())
-        .then(data => setequpment(data))
-    } , [])
+            .then(res => res.json())
+            .then(data => setequpment(data))
+    }, [])
 
-    const adddetails= (equpment) =>  {
+    const adddetails = (equpment) => {
         const newCart = [...details, equpment];
         setdetails(newCart);
     }
+
+
+    const addbreaktimes = (time) => {
+        setbreaktime(time);
+    }
+
 
     return (
 
         <div className='Exercise-Container'>
 
-          <div>
-            <div><h1 className='cart-title'>Please Select Your Exercise</h1></div>
+            <div>
+                <div><h1 className='cart-title'>Please Select Your Exercise</h1></div>
                 <div className='cart-Container'>
 
-                {
-                    equpments.map(equpment =>  <Cart 
-                        key={equpment.id}
-                        eqp = {equpment}
-                        handeldetails = {adddetails}                       
+                    {
+                        equpments.map(equpment => <Cart
+                            key={equpment.id}
+                            eqp={equpment}
+                            handeldetails={adddetails}
                         ></Cart>
-                    )
-                }
+                        )
+                    }
                 </div>
-          </div>
+            </div>
             <div>
-            <Details details={details}></Details>     
+                <Details details={details}
+                    breaktime={addbreaktimes}
+                    breakingtime={breaktime}>
+                </Details>
             </div>
 
         </div>
