@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './Details.css'
@@ -5,7 +6,6 @@ import img from '../Images/profile-picture.png'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// eslint-disable-next-line no-unused-vars
 const Details = (props) => {
     return (
         <div className='detailes-Container'>
@@ -49,6 +49,8 @@ const Details = (props) => {
                 <button>40s</button>
                 <button>50s</button>
             </div>
+
+            <p>length:{props.details.length}</p>
         </div>
     );
 };
