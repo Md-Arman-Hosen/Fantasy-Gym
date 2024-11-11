@@ -1,0 +1,66 @@
+[
+    {
+        "id": "b7629f3c-0a9d-4982-a61d",
+        "name": "Leg Press",
+        "details": "A compound lower-body exercise done on a leg press machine. It primarily targets the quadriceps, hamstrings, and glutes, making it effective for building leg strength and muscle mass.",
+        "age": "20-29",
+        "img": "https://img.freepik.com/free-photo/handsome-man-is-engaged-gym_1157-29935.jpg?t=st=1731350921~exp=1731354521~hmac=fc5c8fb7e07ed6ebfaf6508957f3887f8e3aeca5b2c0e7c61be4920a4ceb0644&w=1380",
+        "time": 80
+    },
+    {
+        "id": "8d7e53f4-3a21-4c5d-bc38",
+        "name": "Dumbbell Press",
+        "details": "A strength training exercise where you press dumbbells overhead while seated or standing. It targets the shoulders, triceps, and upper chest, enhancing upper body strength and stability.",
+        "age": "20-25",
+        "img": "https://img.freepik.com/free-photo/sportsman-training-biceps-with-dumbbell_7502-4743.jpg?t=st=1731348540~exp=1731352140~hmac=7319ebd252803b76b46abf7bdb600a1326198aabe96948428a5787a6db114c04&w=1380",
+        "time": 25
+    },
+    {
+        "id": "f54a19e8-7e3d-4a0e-812a",
+        "name": "Chest Press ",
+        "details": "Performed on a bench using dumbbells or a barbell, the chest press focuses on the pectoral muscles, triceps, and shoulders. It's great for building upper body strength and muscle mass.",
+        "age": "20-30",
+        "img": "https://img.freepik.com/free-photo/muscular-man-gym_144627-3325.jpg?t=st=1731348672~exp=1731352272~hmac=afdf476300b6f2eb9160b6392471566ba5559478bc1327a0a36c6418bffdf21d&w=1380",
+        "time": 40
+    },
+    {
+        "id": "3e19a7f1-72d8-4e0b-bfb8",
+        "name": "Lat Pulldown",
+        "details": "A strength training exercise performed on a cable machine. It targets the latissimus dorsi (back muscles), biceps, and shoulders, helping to build a wide and strong back.",
+        "age": "20-29",
+        "img": "https://img.freepik.com/free-photo/close-up-sportive-man-doing-pullups_23-2148284769.jpg?t=st=1731350873~exp=1731354473~hmac=dd48e865b404c431d5d42c5e14b9c6c37a416c0e3fecbd5519c8f8d8106fa54d&w=996",
+        "time": 80
+    },
+    {
+        "id": "1c9d8f6b-2e5f-47b0-bc11",
+        "name": "Hammer Strength ",
+        "details": "A machine-based workout designed to simulate free weight exercises. It offers controlled movements for targeting specific muscle groups, such as chest, back, or shoulders, while minimizing joint strain.",
+        "age": "20-28",
+        "img": "https://img.freepik.com/free-photo/athlete-gym-swings-triceps-with-barbell-sports-lifestyle_169016-58082.jpg?t=st=1731348866~exp=1731352466~hmac=8a2fc113b5d8c9721ca85aa7fc30d5e613732bb0ddc55177d4d303c954382cf8&w=740",
+        "time": 120
+    },
+    {
+        "id": "a23c74f2-5f78-4b3e-909b",
+        "name": "Fly Press",
+        "details": "An isolation exercise performed on a bench with dumbbells or a machine. It focuses on the chest muscles by mimicking a hugging motion, helping to develop a broad and defined chest",
+        "age": "18-30",
+        "img": "https://img.freepik.com/free-photo/training-cross-fit-gym-muscular-man-is-gym-concept-sport_169016-4597.jpg?t=st=1731348998~exp=1731352598~hmac=6f533765b19f441d222e8dc40cb1bfbac6a7667f8dd7113431b72452a45dd179&w=740",
+        "time": 20
+    },
+    {
+        "id": "d08b6a2e-1c44-4c6e-82f4",
+        "name": "Abdominal Roller",
+        "details": "A core-strengthening tool that uses a wheel with handles to perform roll-outs. This exercise engages the abs, obliques, and lower back, improving core stability and strength.",
+        "age": "20-26",
+        "img": "https://img.freepik.com/free-photo/young-healthy-man-athlete-doing-exercises-with-roller-gym_155003-35464.jpg?t=st=1731349074~exp=1731352674~hmac=2618a0ce1d907243093e29dc383b20f8318dd15860b462357fb846517a4fe85c&w=1380",
+        "time": 180
+    },
+    {
+        "id": "e4719c3d-39b5-4fa2-bd67",
+        "name": "Weight Lifting",
+        "details": "A general term for exercises involving lifting weights, including free weights (like barbells and dumbbells) and machines. It targets various muscle groups, promoting strength, muscle growth, and overall fitness.",
+        "age": "20-29",
+        "img": "https://img.freepik.com/free-photo/man-lifting-weight_23-2147671920.jpg?t=st=1731349128~exp=1731352728~hmac=4588ca00e989ff4a757deda09c7a6b08fd357a285dcd901b286c4d17904b6dce&w=740",
+        "time": 80
+    }
+]
