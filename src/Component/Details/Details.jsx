@@ -14,7 +14,9 @@ const Details = (props) => {
         time = time + info.time;
     }
 
-    breaktime = props.breakingtime;
+    const timefromLocalstorage = localStorage.getItem("Breaking-Time")
+    breaktime = timefromLocalstorage;    
+
     return (
         <div className='detailes-Container'>
 
@@ -51,7 +53,7 @@ const Details = (props) => {
             <h1>Take A Break</h1>
 
             <div className='health-info'>
-            <button onClick={()=>{props.breaktime(10)}}>10s</button>
+                <button onClick={()=>{props.breaktime(10)}}>10s</button>
                 <button onClick={()=>{props.breaktime(20)}}>20s</button>
                 <button onClick={()=>{props.breaktime(30)}}>30s</button>
                 <button onClick={()=>{props.breaktime(40)}}>40s</button>

@@ -14,7 +14,7 @@ const Cart = (props) => {
         <div className='cart'>
             <img src={img} alt="" />
             <div className='cart-info'>
-                <h3>Name: {name}</h3>
+                <h3>{name}</h3>
                 <p>{details}</p>
                 <p><span className='age-time'>For Age: {age}</span></p>
                 <p><span className='age-time'>Time required: {time}</span></p>

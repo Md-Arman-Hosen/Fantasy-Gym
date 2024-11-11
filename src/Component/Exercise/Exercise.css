@@ -15,3 +15,12 @@
     gap: 45px;
     margin-left: 100px;
 }
+
+.details-Container{
+    position: absolute;
+    right: 0;
+}
+
+.Question-Container{
+    padding: 100px;
+}
