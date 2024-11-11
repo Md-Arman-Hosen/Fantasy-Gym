@@ -55,3 +55,33 @@
     border: none;
     border-radius: 20%;
 }
+.Exercise-Details{
+    margin-top: 100px;
+}
+
+.exercise-time-break-time{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.exercise-time-break-time h1{
+    margin: 0;
+}
+
+.exercise-time-break-time h2{
+    margin: 0;
+    padding-top: 7px;
+    font-weight: 400;
+}
+
+.Activity-btn{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 35px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: aquamarine;
+}
