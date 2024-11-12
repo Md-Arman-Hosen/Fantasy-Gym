@@ -1,26 +1,106 @@
-.Exercise-Container{
+.Exercise-Container {
     background-color: azure;
     display: grid;
     grid-template-columns: 4fr 2fr;
 }
 
-.cart-title{
+.cart-title {
     margin-top: 50px;
     margin-left: 100px;
 
 }
-.cart-Container{
+
+.cart-Container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 45px;
     margin-left: 100px;
 }
 
-.details-Container{
-    position: absolute;
-    right: 0;
+.Question-Container {
+    padding: 100px;
 }
 
-.Question-Container{
-    padding: 100px;
+#snackbar {
+    visibility: hidden;
+    min-width: 500px;
+    margin-left: -120px;
+    background-color: rgb(41, 226, 72);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 90px;
+    font-size: 30px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 1s, fadeout 10s 1s;
+    animation: fadein 1s, fadeout 10s 1s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 500;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 500px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 500;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 500px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        top: 500px;
+        opacity: 1;
+    }
+
+    to {
+        top: 500;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 500px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 500;
+        opacity: 0;
+    }
+}
+@media screen and (max-width:576px) {
+    .Exercise-Container {
+        width: 350px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cart-Container {
+        width: 350px;
+        padding: auto;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }

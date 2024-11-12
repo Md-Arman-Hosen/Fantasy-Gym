@@ -58,7 +58,7 @@
     {
         "id": "e4719c3d-39b5-4fa2-bd67",
         "name": "Weight Lifting",
-        "details": "A general term for exercises involving lifting weights, including free weights (like barbells and dumbbells) and machines. It targets various muscle groups, promoting strength, muscle growth, and overall fitness.",
+        "details": "A general term for exercises involving lifting weights, including free weights and machines. It targets various muscle groups, promoting strength, muscle growth, and overall fitness.",
         "age": "20-29",
         "img": "https://img.freepik.com/free-photo/man-lifting-weight_23-2147671920.jpg?t=st=1731349128~exp=1731352728~hmac=4588ca00e989ff4a757deda09c7a6b08fd357a285dcd901b286c4d17904b6dce&w=740",
         "time": 80
@@ -66,7 +66,7 @@
     {
         "id": "z4719c3d-39b5-4fa2-bd67",
         "name": "Dead Lift",
-        "details": "A full-body compound exercise that involves lifting a barbell or weights off the ground to hip level. It primarily targets the lower back, glutes, hamstrings, and core, making it one of the best exercises for building strength and muscle mass.",
+        "details": "It primarily targets the lower back, glutes, hamstrings, and core, making it one of the best exercises for building strength and muscle mass.",
         "age": "20-29",
         "img": "https://img.freepik.com/free-photo/muscular-build-man-making-effort-while-weightlifting-cross-training-gym_637285-2488.jpg?t=st=1731356059~exp=1731359659~hmac=7cf51c1dd081298c13d82e584211a474595ebc833a0ba87e9e6a1aae238c42f3&w=1380",
         "time": 80

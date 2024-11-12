@@ -1,10 +1,10 @@
 .detailes-Container{
-    background-color: rgba(150, 215, 231, 0.449);
-    padding-top: 10px;
+    background-color: rgb(208, 219, 222);
+    margin-top: 30px;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 20px;
-    margin-top: 20px;
 }
 
 .profile{
@@ -18,6 +18,7 @@
     margin: 0;
 }
 .profile img{
+    border-radius: 50%;
     width: 80px;
     height: 80px;
 }
@@ -29,13 +30,14 @@
 .location p{
     padding-left: 5px;
 }
+
 .health-info{
     padding: 10px;
     background-color: aliceblue;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
-
+    
 }
 
 .health-unit-info h1{
@@ -55,10 +57,12 @@
     border: none;
     border-radius: 20%;
 }
-.health-info button:hover{
+
+.healt-info button:hover{
     color: white;
     background-color: rgb(37, 82, 82);
 }
+
 .Exercise-Details{
     margin-top: 100px;
 }
@@ -89,7 +93,20 @@
     padding: 10px;
     background-color: aquamarine;
 }
+
 .Activity-btn:hover{
     color: white;
     background-color: rgb(37, 82, 67);
+}
+
+
+@media screen and (max-width:576px) {
+    .detailes-Container{
+        margin: auto;
+        width: 350px;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -5,7 +5,7 @@ import "./Questions.css"
 const Question = () => {
     return (
         <div>
-            <div>
+            <div className='question'>
                 <h1>How does React Work?</h1>
                 <p>React creates a VIRTUAL DOM in memory.
                     Instead of manipulating the browser&lsquo;s DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.

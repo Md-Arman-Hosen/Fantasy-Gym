@@ -7,15 +7,22 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Details = (props) => {
-    let time = 0;
-    let breaktime = 0; 
 
-    for(let info of props.details){
+
+
+    // console.log(breaktime);
+    let time = 0;
+    let breaktime = 0;
+
+    // eslint-disable-next-line react/prop-types
+    for (let info of props.details) {
         time = time + info.time;
     }
 
+
     const timefromLocalstorage = localStorage.getItem("Breaking-Time")
-    breaktime = timefromLocalstorage;    
+    breaktime = timefromLocalstorage;
+
 
     return (
         <div className='detailes-Container'>
@@ -53,12 +60,13 @@ const Details = (props) => {
             <h1>Take A Break</h1>
 
             <div className='health-info'>
-                <button onClick={()=>{props.breaktime(10)}}>10s</button>
-                <button onClick={()=>{props.breaktime(20)}}>20s</button>
-                <button onClick={()=>{props.breaktime(30)}}>30s</button>
-                <button onClick={()=>{props.breaktime(40)}}>40s</button>
-                <button onClick={()=>{props.breaktime(50)}}>50s</button>
+                <button onClick={() => { props.breaktime(10) }}>10s</button>
+                <button onClick={() => { props.breaktime(20) }}>20s</button>
+                <button onClick={() => { props.breaktime(30) }}>30s</button>
+                <button onClick={() => { props.breaktime(40) }}>40s</button>
+                <button onClick={() => { props.breaktime(50) }}>50s</button>
             </div>
+
             <h1 className='Exercise-Details'>Exercise Details</h1>
 
             <div className='exercise-time-break-time health-info'>
@@ -70,9 +78,14 @@ const Details = (props) => {
                 <h1>Break time </h1>
                 <h2>{breaktime} <span className='unit-style'>seconds</span></h2>
             </div>
-            <button className='Activity-btn'>Activity Completed</button>
 
+        
+
+            <button onClick={()=>{props.click()}} className='Activity-btn'>Activity Completed</button>
+            
         </div>
+
     );
 };
+
 export default Details;
